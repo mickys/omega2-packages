@@ -28,7 +28,7 @@ define Package/oos-app-env-reporter
 	CATEGORY:=Nowlive
 	SUBMENU:=Applications
 	TITLE:=Environment MQTT Reporter : based on Sparkfun Qwiic
-	DEPENDS:=+libonioni2c +libmosquitto
+	DEPENDS:=+libonioni2c +libmosquitto +libssl +libcrypto +libconfig
 endef
 
 
