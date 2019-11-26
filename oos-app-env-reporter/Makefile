@@ -26,7 +26,7 @@ include $(INCLUDE_DIR)/package.mk
 define Package/oos-app-env-reporter
 	SECTION:=nowlive
 	CATEGORY:=Nowlive
-	SUBMENU:=OS
+	SUBMENU:=Applications
 	TITLE:=Environment MQTT Reporter : based on Sparkfun Qwiic
 	DEPENDS:=+libonioni2c +libmosquitto
 endef
