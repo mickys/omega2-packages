@@ -37,7 +37,7 @@ Environment MQTT Reporter : based on Sparkfun Qwiic
 endef
 
 define Package/oos-app-env-reporter/install
-	$(INSTALL_DIR) $(1)/www/apps/oos-app-env-reporter $(1)/usr/bin $(1)/etc/init.d
+	$(INSTALL_DIR) $(1)/www/apps/oos-app-env-reporter $(1)/usr/bin $(1)/etc/init.d $(1)/etc/env-reporter
 	# copy the web site files
 	$(CP) -r $(PKG_BUILD_DIR)/omega/www/* $(1)/www/apps/oos-app-env-reporter/
 	# install configuration files
