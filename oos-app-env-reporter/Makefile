@@ -40,6 +40,8 @@ define Package/oos-app-env-reporter/install
 	$(INSTALL_DIR) $(1)/www/apps/oos-app-env-reporter $(1)/usr/bin $(1)/etc/init.d
 	# copy the web site files
 	$(CP) -r $(PKG_BUILD_DIR)/omega/www/* $(1)/www/apps/oos-app-env-reporter/
+	# install configuration files
+	$(CP) -r $(PKG_BUILD_DIR)/omega/etc/env-reporter/* $(1)/etc/env-reporter/
 	# install the program
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/omega/src/env-reporter $(1)/usr/bin/
 	# install the init.d scripts
