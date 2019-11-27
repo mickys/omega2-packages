@@ -45,9 +45,9 @@ define Package/oos-app-env-reporter/install
 	# install the program
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/omega/src/env-reporter $(1)/usr/bin/
 	# install the init.d scripts
-	$(INSTALL_BIN) $(PKG_BUILD_DIR)/omega/init.d/oos-qwiic-amg8833 $(1)/etc/init.d/
-	$(INSTALL_BIN) $(PKG_BUILD_DIR)/omega/init.d/oos-qwiic-env $(1)/etc/init.d/
-	$(INSTALL_BIN) $(PKG_BUILD_DIR)/omega/init.d/oos-qwiic-vl53l1x $(1)/etc/init.d/
+	#$(INSTALL_BIN) $(PKG_BUILD_DIR)/omega/init.d/oos-qwiic-amg8833 $(1)/etc/init.d/
+	#$(INSTALL_BIN) $(PKG_BUILD_DIR)/omega/init.d/oos-qwiic-vl53l1x $(1)/etc/init.d/
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/omega/init.d/oos-env-reporter $(1)/etc/init.d/
 endef
 
 
